@@ -1,0 +1,28 @@
+Status: working
+
+
+Manage Jenkins -> Configure System 
+
+  check Environment
+
+    ORGANIZATION_NAME renegmed-org    # ref to https://github.com/renegmed-org
+    YOUR_DOCKERHUB_NAME renegmedal
+
+
+Muiltiple repository into one organization
+
+Create Job:
+    name: Fleetman 
+    type: organization 
+
+GitHub Organization: 
+
+    credentials: renegmed    # NOTE same credential with github.com/renegmed
+    owner: renegmed-org 
+
+http://minikube:31000   # jenkins     
+
+http://minikube:30080   # web app 
+
+
+
